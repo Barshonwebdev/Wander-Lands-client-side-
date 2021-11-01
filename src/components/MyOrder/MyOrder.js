@@ -35,7 +35,7 @@ const MyOrder = () => {
            <h1 className="text-warning mt-5">Your Current Orders are- </h1>
            <ol className="w-50 mx-auto">
                 {
-                    users.map(user=> <li className="mb-3" key={user._id}>Client:{user.Name} | Address:{user.address} | Package Name: {user.package} | email: {user.email}
+                    users.map(user=> <li className="mb-3" key={user._id}>Client:{user.Name} | Address:{user.address} | Package Name: {user.package} 
                     <button className="btn-danger ms-5" onClick={()=>
                     handleDeleteUser(user._id)}> Remove Order</button></li>)
                 }
