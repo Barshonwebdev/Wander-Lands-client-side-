@@ -14,7 +14,8 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 import ServiceDetails from './components/ServiceDetails/ServiceDetails';
 import AddService from './components/AddService/AddService';
 import MyOrder from './components/MyOrder/MyOrder';
-import AllOrder from './AllOrders/AllOrder';
+import AllOrder from './components/AllOrders/AllOrder';
+
 
 
 function App() {
