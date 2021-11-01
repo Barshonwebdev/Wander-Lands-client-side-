@@ -1,0 +1,13 @@
+.not-found{
+    color: red;
+    font-size: 48px;
+}
+
+.not-found-section{
+    margin-top: 5%;
+}
+
+.sorry{
+    width: 700px;
+    height: 400px;
+}
