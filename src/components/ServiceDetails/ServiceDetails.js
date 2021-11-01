@@ -20,7 +20,7 @@ const ServiceDetails = () => {
     data.email=user.email;
     data.Name=user.displayName;
     data.package=allData?.Name
-    axios.post('http://localhost:4000/orders',data)
+    axios.post('https://arcane-hamlet-80803.herokuapp.com/orders',data)
     .then(res=>{
         if(res.data.insertedId){
             alert('Order Placed successfully');
@@ -32,7 +32,7 @@ const ServiceDetails = () => {
   };
 
     useEffect(()=>{
-        fetch(`http://localhost:4000/services`)
+        fetch(`https://arcane-hamlet-80803.herokuapp.com/services`)
         .then(res=> res.json())
         .then(data => setDetail(data) )
     },[reset])

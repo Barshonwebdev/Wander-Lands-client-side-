@@ -6,7 +6,7 @@ import axios from 'axios';
 const AddService = () => {
     const { register,reset, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data =>{ console.log(data);
-    axios.post('http://localhost:4000/services',data)
+    axios.post('https://arcane-hamlet-80803.herokuapp.com/services',data)
     .then(res=>{
         if(res.data.insertedId){
             alert('added successfully');

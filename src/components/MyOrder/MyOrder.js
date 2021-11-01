@@ -6,7 +6,7 @@ const MyOrder = () => {
     const [users, setUsers]= useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:4000/myOrder')
+        fetch('https://arcane-hamlet-80803.herokuapp.com/myOrder')
         .then(res=>res.json())
         .then (data=> setUsers(data));
     },[])
@@ -15,7 +15,7 @@ const MyOrder = () => {
         const proceed= window.confirm('Are you sure you want to remove it?');
 
         if (proceed){
-         const url = `http://localhost:4000/myOrder/${id}`;
+         const url = `https://arcane-hamlet-80803.herokuapp.com/myOrder/${id}`;
          fetch(url,{
              method: 'DELETE'
          })
