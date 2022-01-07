@@ -18,7 +18,7 @@ const HomepageServices = () => {
             {  services.length===0 ? <Spinner animation="border" variant="success" />
             
             :
-            <Row sm={1} md={3} className= "g-4 " > 
+            <Row sm={1} md={2} className= "g-4 " > 
                {services.map(service=><HomepageSingleService key={service._id} service={service}></HomepageSingleService>) }
 
                </Row>
